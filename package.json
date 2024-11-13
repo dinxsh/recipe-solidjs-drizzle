@@ -1,0 +1,30 @@
+{
+  "name": "solid-saas-starter",
+  "type": "module",
+  "scripts": {
+    "dev": "vinxi dev",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "db:generate": "drizzle-kit generate:pg",
+    "db:migrate": "tsx drizzle/migrate.ts",
+    "db:push": "drizzle-kit push:pg"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "@types/pg": "^8.11.2",
+    "drizzle-kit": "^0.22.7",
+    "tsx": "^4.7.1"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.15.0",
+    "@solidjs/start": "^1.0.10",
+    "drizzle-orm": "^0.31.2",
+    "pg": "^8.11.3",
+    "solid-js": "^1.9.2",
+    "solid-start": "^0.3.11",
+    "vinxi": "^0.4.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
