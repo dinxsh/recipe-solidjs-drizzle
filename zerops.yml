@@ -6,6 +6,13 @@ zerops:
         - pnpm i
         - pnpm build
       deployFiles:
-        - dist/~
+        - .output
+        - public
+        - node_modules
+        - package.json
     run:
-      base: static
+      base: nodejs@20
+      ports:
+        - port: 3000
+          httpSupport: true
+      start: pnpm start

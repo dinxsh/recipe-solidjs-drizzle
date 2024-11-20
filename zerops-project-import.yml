@@ -5,6 +5,6 @@ project:
 
 services:
   - hostname: app
-    type: static
+    type: nodejs@20
     enableSubdomainAccess: true
     buildFromGit: https://github.com/dinxsh/recipe-solidjs-drizzle
